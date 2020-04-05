@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  .mdl-grid
+    .mdl-color--white.mdl-shadow--4dp.content.mdl-color-text--grey-800.mdl-cell.mdl-cell--12-col
+      h1= title
+      p Welcome to #{title}
+      br
+      br
+      H3 Register:
+      form#register(method="POST" action='/api/users' enctype="multipart/form-data")
+        .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.reg-box
+          label.mdl-textfield__label(for='firstname') First name
+          input.mdl-textfield__input#firstname(type='text' name='firstname' )
+        .mdl-textfield.mdl-js-textfield.mdl-textfield--floating-label.reg-box
+          label.mdl-textfield__label(for='lastname') Last name
+          input.mdl-textfield__input#lastname(type='text' name='lastname' )
+        br
+        | Photo
+        input.mdl-button.mdl-textfield__input.reg-image#imagefile(type='file' name='imagefile' accept="image/png")
+        input#formcallback(type='hidden' name='callback' )
+        br
+        br
+        input.mdl-button.mdl-js-button.mdl-button--raised.mdl-button--colored(type='submit' value='Submit')
+
+
+
+

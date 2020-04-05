@@ -1,0 +1,18 @@
+{
+  "name": "azurewebjob",
+  "version": "1.0.0",
+  "engines": {
+    "node": "8.9.0"
+  },
+  "description": "",
+  "main": "run.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "azure-storage": "^2.10.3",
+    "pinklog": "^1.0.0"
+  }
+}

@@ -1,0 +1,19 @@
+main {
+  padding: 50px;
+}
+
+.reg-box {
+  padding-right: 15px;
+  max-width: 180px;
+}
+.reg-image {
+  max-width: 300px;
+}
+
+.mdl-grid .content {
+  padding: 50px;
+}
+
+a {
+  color: #00B7FF;
+}
